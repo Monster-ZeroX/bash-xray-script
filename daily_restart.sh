@@ -17,3 +17,6 @@ fi
 
 # Schedule the restart
 echo "sudo shutdown -r now" | at now + $seconds_until_restart seconds
+
+# Add the script to crontab (if not already present)
+crontab -l | grep -q "daily_restart.sh" || (crontab -l 2>/dev/null; echo "0 0 * * * /bash-xray-script/daily_restart.sh") | crontab -
