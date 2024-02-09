@@ -70,9 +70,7 @@ https://github.com/2dust/v2rayNG)
 
 1) sudo chmod +x daily_restart.sh 
 
-2) crontab -e (Select 1)
-
-3) 0 0 * * * /bash-xray-script/daily_restart.sh (**Add the following line to schedule the script to run at midnight every day**)
+2) sudo ./daily_restart.sh 
 
 ## :octocat: Credits
 
